@@ -1,0 +1,14 @@
+<mamecheat version="1">
+    <cheat desc="Mambo Heaven (Asia ver)">
+        <script state="run">
+            <action>maincpu.pb@8017A772=02</action> <!-- English -->
+            <action>maincpu.pw@80093B2C=0003</action> <!-- Mambo Heaven title -->
+        </script>
+    </cheat>
+    <cheat desc="Mambo King (Korean ver)">
+        <script state="run">
+            <action>maincpu.pb@8017A772=02</action> <!-- English, Korean images aren't available in game data -->
+            <action>maincpu.pw@80093B2C=0004</action> <!-- Mambo King title -->
+        </script>
+    </cheat>
+</mamecheat>

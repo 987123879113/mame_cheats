@@ -1,0 +1,18 @@
+<mamecheat version="1">
+    <cheat desc="Autoplay">
+        <script state="run">
+            <action>maincpu.pd@8007f800=00000000</action>
+            <action>maincpu.pd@8007f914=00000000</action>
+            <action>maincpu.pd@8007f8a8=34020000</action>
+            <action>maincpu.pd@8007f8b0=00000000</action>
+            <action>maincpu.ph@8007f8f4=0002</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@8007f800=14600062</action>
+            <action>maincpu.pd@8007f914=10600105</action>
+            <action>maincpu.pd@8007f8a8=0c007191</action>
+            <action>maincpu.pd@8007f8b0=0c007191</action>
+            <action>maincpu.ph@8007f8f4=0010</action>
+        </script>
+    </cheat>
+</mamecheat>

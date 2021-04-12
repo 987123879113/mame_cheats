@@ -1,0 +1,17 @@
+<mamecheat version="1">
+    <cheat desc="Change region flag">
+        <script state="run">
+            <action>maincpu.pb@8009A838=02</action>
+        </script>
+    </cheat>
+    <cheat desc="Change language">
+        <script state="run">
+            <action>maincpu.pb@80115786=06</action>
+        </script>
+    </cheat>
+    <cheat desc="Change music database">
+        <script state="run">
+            <action>maincpu.pb@800104C5=65</action>
+        </script>
+    </cheat>
+</mamecheat>

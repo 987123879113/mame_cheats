@@ -1,0 +1,44 @@
+<mamecheat version="1">
+    <cheat desc="Skip Multisession Unit Error">
+        <script state="run">
+            <action>maincpu.pd@8004F6E0=00000000</action>
+            <action>maincpu.pd@8004F740=00000000</action>
+        </script>
+    </cheat>
+    <cheat desc="Autoplay">
+        <script state="run">
+            <action>maincpu.pd@80093050=24020001</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80093050=0c0094cf</action>
+        </script>
+    </cheat>
+    <cheat desc="All Songs Unlocked">
+        <script state="run">
+            <action>maincpu.pd@80031D3C=24020000</action>
+            <action>maincpu.pd@80031ED0=24020000</action>
+            <action>maincpu.pd@80031B78=24020000</action>
+            <action>maincpu.pd@800A8AE4=24040000</action>
+            <action>maincpu.pd@800A8AF4=24040000</action>
+            <action>maincpu.pd@800A8B04=24040000</action>
+            <action>maincpu.pd@800A8B14=24040000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80031D3C=30420001</action>
+            <action>maincpu.pd@80031ED0=30420001</action>
+            <action>maincpu.pd@80031B78=30420001</action>
+            <action>maincpu.pd@800A8AE4=2404025a</action>
+            <action>maincpu.pd@800AC9C0=24040262</action>
+            <action>maincpu.pd@800AC9C4=2404026b</action>
+            <action>maincpu.pd@800AC9CC=2404026b</action>
+        </script>
+    </cheat>
+    <cheat desc="Enable System Songs (Debug, How To Play) (BUGGY)">
+        <script state="run">
+            <action>maincpu.pd@80031CB8=24020000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80031CB8=30420001</action>
+        </script>
+    </cheat>
+</mamecheat>

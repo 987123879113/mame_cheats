@@ -1,0 +1,29 @@
+<mamecheat version="1">
+    <cheat desc="Skip Multisession Unit Error">
+        <script state="run">
+            <action>maincpu.pd@8003BAF8=00000000</action>
+        </script>
+    </cheat>
+    <cheat desc="Autoplay">
+        <script state="run">
+            <action>maincpu.pd@800CF298=24020001</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@800CF298=0C00D86F</action>
+        </script>
+    </cheat>
+    <cheat desc="All Songs Unlocked">
+        <script state="run">
+            <action>maincpu.pd@8003C544=24020000</action>
+            <action>maincpu.pd@8003C380=24020000</action>
+            <action>maincpu.pd@800BA110=240b0000</action>
+            <action>maincpu.pd@800BA114=240c0000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@8003C544=30420001</action>
+            <action>maincpu.pd@8003C380=30420001</action>
+            <action>maincpu.pd@800BA110=8c6b0000</action>
+            <action>maincpu.pd@800BA114=8c6c0000</action>
+        </script>
+    </cheat>
+</mamecheat>
