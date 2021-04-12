@@ -15,4 +15,17 @@
             <action>maincpu.pw@8007f8f4=0010</action>
         </script>
     </cheat>
+
+    <cheat desc="Disable announcer/crowd during song">
+        <script state="run">
+            <action>maincpu.pd@80080c50=00000000</action>
+            <action>maincpu.pd@80080204=00000000</action>
+            <action>maincpu.pd@80080de8=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80080c50=0c029525</action>
+            <action>maincpu.pd@80080204=0c029525</action>
+            <action>maincpu.pd@80080de8=0c029525</action>
+        </script>
+    </cheat>
 </mamecheat>

@@ -15,4 +15,47 @@
             <action>maincpu.pw@80073a38=0010</action>
         </script>
     </cheat>
+
+    <cheat desc="Disable announcer/crowd during song">
+        <script state="run">
+            <action>maincpu.pd@8007455c=00000000</action>
+            <action>maincpu.pd@80074598=00000000</action>
+            <action>maincpu.pd@800745d4=00000000</action>
+            <action>maincpu.pd@80074610=00000000</action>
+            <action>maincpu.pd@8007464c=00000000</action>
+            <action>maincpu.pd@80074688=00000000</action>
+            <action>maincpu.pd@80074844=00000000</action>
+            <action>maincpu.pd@800747dc=00000000</action>
+            <action>maincpu.pd@80074b3c=00000000</action>
+            <action>maincpu.pd@80074adc=00000000</action>
+            <action>maincpu.pd@80075324=00000000</action>
+            <action>maincpu.pd@800752b8=00000000</action>
+            <action>maincpu.pd@800756c8=00000000</action>
+            <action>maincpu.pd@80075a1c=00000000</action>
+            <action>maincpu.pd@80075b48=00000000</action>
+            <action>maincpu.pd@80075b80=00000000</action>
+            <action>maincpu.pd@80075bb8=00000000</action>
+            <action>maincpu.pd@80075bf0=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@8007455c=0c02a6c3</action>
+            <action>maincpu.pd@80074598=0c02a6c3</action>
+            <action>maincpu.pd@800745d4=0c02a6c3</action>
+            <action>maincpu.pd@80074610=0c02a6c3</action>
+            <action>maincpu.pd@8007464c=0c02a6c3</action>
+            <action>maincpu.pd@80074688=0c02a6c3</action>
+            <action>maincpu.pd@80074844=0c02a6c3</action>
+            <action>maincpu.pd@800747dc=0c02a6c3</action>
+            <action>maincpu.pd@80074b3c=0c02a6c3</action>
+            <action>maincpu.pd@80074adc=0c02a6c3</action>
+            <action>maincpu.pd@80075324=0c02a6c3</action>
+            <action>maincpu.pd@800752b8=0c02a6c3</action>
+            <action>maincpu.pd@800756c8=0c02a6c3</action>
+            <action>maincpu.pd@80075a1c=0c02a6c3</action>
+            <action>maincpu.pd@80075b48=0c02a6c3</action>
+            <action>maincpu.pd@80075b80=0c02a6c3</action>
+            <action>maincpu.pd@80075bb8=0c02a6c3</action>
+            <action>maincpu.pd@80075bf0=0c02a6c3</action>
+        </script>
+    </cheat>
 </mamecheat>
