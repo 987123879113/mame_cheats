@@ -2,12 +2,11 @@
     <cheat desc="Enable debug menu">
         <script state="run">
             <action>maincpu.pb@800f90d0=01</action>
+            <action>maincpu.pw@800f90d4=0001</action>
             <action>maincpu.pd@80018a68=00000000</action>
-            <action>maincpu.pd@80018b0c=00000000</action>
         </script>
         <script state="off">
             <action>maincpu.pd@80018a68=10400030</action>
-            <action>maincpu.pd@80018b0c=10400003</action>
         </script>
     </cheat>
 
