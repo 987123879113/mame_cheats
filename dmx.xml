@@ -1,0 +1,27 @@
+<mamecheat version="1">
+    <cheat desc="Enable debug menu">
+        <script state="run">
+            <action>maincpu.pb@800f90d0=01</action>
+            <action>maincpu.pd@80018a68=00000000</action>
+            <action>maincpu.pd@80018b0c=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80018a68=10400030</action>
+            <action>maincpu.pd@80018b0c=10400003</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug menu implementation (do not disable)">
+        <script state="run">
+            <action>maincpu.pd@800103cc=3c02801f</action>
+            <action>maincpu.pd@800103d0=24429080</action>
+            <action>maincpu.pd@800103d4=00441020</action>
+            <action>maincpu.pd@800103d8=80420000</action>
+            <action>maincpu.pd@800103dc=00000000</action>
+            <action>maincpu.pd@800103e0=03e00008</action>
+            <action>maincpu.pd@800103e4=00000000</action>
+            <action>maincpu.pd@80098c24=080040f3</action>
+            <action>maincpu.pd@80098c28=00000000</action>
+        </script>
+    </cheat>
+</mamecheat>
