@@ -1,0 +1,16 @@
+<mamecheat version="1">
+    <cheat desc="Autoplay (no keysounds)">
+        <script state="on">
+            <action>temp0=maincpu.pd@80077f14</action>
+            <action>temp1=maincpu.pd@80079864</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80077f14=38800016</action>
+            <action>maincpu.pd@80079864=2c1e0000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80077f14=temp0</action>
+            <action>maincpu.pd@80079864=temp1</action>
+        </script>
+    </cheat>
+</mamecheat>
