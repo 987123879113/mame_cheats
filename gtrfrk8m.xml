@@ -1,0 +1,37 @@
+<mamecheat version="1">
+    <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@8006ce10</action>
+            <action>temp1=maincpu.pd@8006dd80</action>
+            <action>temp2=maincpu.pd@8006df40</action>
+            <action>temp3=maincpu.pd@8006e514</action>
+            <action>temp4=maincpu.pd@8006e64c</action>
+            <action>temp5=maincpu.pd@80071c78</action>
+            <action>temp6=maincpu.pd@80071d78</action>
+            <action>temp7=maincpu.pd@80072268</action>
+            <action>temp8=maincpu.pd@80072410</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@8006ce10=24020001</action>
+            <action>maincpu.pd@8006dd80=24020001</action>
+            <action>maincpu.pd@8006df40=24020001</action>
+            <action>maincpu.pd@8006e514=24020001</action>
+            <action>maincpu.pd@8006e64c=24020001</action>
+            <action>maincpu.pd@80071c78=24020001</action>
+            <action>maincpu.pd@80071d78=24020001</action>
+            <action>maincpu.pd@80072268=24020001</action>
+            <action>maincpu.pd@80072410=24020001</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@8006ce10=temp0</action>
+            <action>maincpu.pd@8006dd80=temp1</action>
+            <action>maincpu.pd@8006df40=temp2</action>
+            <action>maincpu.pd@8006e514=temp3</action>
+            <action>maincpu.pd@8006e64c=temp4</action>
+            <action>maincpu.pd@80071c78=temp5</action>
+            <action>maincpu.pd@80071d78=temp6</action>
+            <action>maincpu.pd@80072268=temp7</action>
+            <action>maincpu.pd@80072410=temp8</action>
+        </script>
+    </cheat>
+</mamecheat>

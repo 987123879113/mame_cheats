@@ -1,0 +1,25 @@
+<mamecheat version="1">
+    <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@800a7ec4</action>
+            <action>temp1=maincpu.pd@800a9694</action>
+            <action>temp2=maincpu.pd@800a9770</action>
+            <action>temp3=maincpu.pd@800a9864</action>
+            <action>temp4=maincpu.pd@800aa0c8</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@800a7ec4=24020001</action>
+            <action>maincpu.pd@800a9694=24020001</action>
+            <action>maincpu.pd@800a9770=24020001</action>
+            <action>maincpu.pd@800a9864=24020001</action>
+            <action>maincpu.pd@800aa0c8=24020001</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@800a7ec4=temp0</action>
+            <action>maincpu.pd@800a9694=temp1</action>
+            <action>maincpu.pd@800a9770=temp2</action>
+            <action>maincpu.pd@800a9864=temp3</action>
+            <action>maincpu.pd@800aa0c8=temp4</action>
+        </script>
+    </cheat>
+</mamecheat>

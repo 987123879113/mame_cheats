@@ -1,0 +1,19 @@
+<mamecheat version="1">
+    <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@800c8bf4</action>
+            <action>temp1=maincpu.pd@800c6740</action>
+            <action>temp2=maincpu.pd@800c9e2c</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@800c8bf4=A2830003</action> <!-- Assumes v1 is always 1 -->
+            <action>maincpu.pd@800c6740=00000060</action>
+            <action>maincpu.pd@800c9e2c=A0A50009</action> <!-- Assumes a1 is always non-zero -->
+        </script>
+        <script state="off">
+            <action>maincpu.pd@800c8bf4=temp0</action>
+            <action>maincpu.pd@800c6740=temp1</action>
+            <action>maincpu.pd@800c9e2c=temp2</action>
+        </script>
+    </cheat>
+</mamecheat>
