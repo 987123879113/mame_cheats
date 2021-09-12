@@ -1,5 +1,12 @@
 <mamecheat version="1">
     <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@80076dd4</action>
+            <action>temp1=maincpu.pd@80076ee8</action>
+            <action>temp2=maincpu.pd@80076e7c</action>
+            <action>temp3=maincpu.pd@80076e84</action>
+            <action>temp4=maincpu.pw@80076ec8</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@80076dd4=00000000</action>
             <action>maincpu.pd@80076ee8=00000000</action>
@@ -8,15 +15,38 @@
             <action>maincpu.pw@80076ec8=0002</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80076dd4=14600067</action>
-            <action>maincpu.pd@80076ee8=1060010e</action>
-            <action>maincpu.pd@80076e7c=0c007134</action>
-            <action>maincpu.pd@80076e84=0c007134</action>
-            <action>maincpu.pw@80076ec8=0010</action>
+            <action>maincpu.pd@80076dd4=temp0</action>
+            <action>maincpu.pd@80076ee8=temp1</action>
+            <action>maincpu.pd@80076e7c=temp2</action>
+            <action>maincpu.pd@80076e84=temp3</action>
+            <action>maincpu.pw@80076ec8=temp4</action>
         </script>
     </cheat>
 
     <cheat desc="Disable announcer/crowd during song">
+        <script state="on">
+            <action>temp0=maincpu.pd@80077aa0</action>
+            <action>temp1=maincpu.pd@80077ad8</action>
+            <action>temp2=maincpu.pd@80077b10</action>
+            <action>temp3=maincpu.pd@80077b48</action>
+            <action>temp4=maincpu.pd@80077b80</action>
+            <action>temp5=maincpu.pd@80077bb8</action>
+            <action>temp6=maincpu.pd@80077bf0</action>
+            <action>temp7=maincpu.pd@80077c28</action>
+            <action>temp8=maincpu.pd@80077c60</action>
+            <action>temp9=maincpu.pd@80077c98</action>
+            <action>temp10=maincpu.pd@80077cd0</action>
+            <action>temp11=maincpu.pd@800781b8</action>
+            <action>temp12=maincpu.pd@80078154</action>
+            <action>temp13=maincpu.pd@80078960</action>
+            <action>temp14=maincpu.pd@800788fc</action>
+            <action>temp15=maincpu.pd@80078ce0</action>
+            <action>temp16=maincpu.pd@8007902c</action>
+            <action>temp17=maincpu.pd@80079150</action>
+            <action>temp18=maincpu.pd@80079188</action>
+            <action>temp19=maincpu.pd@800791c0</action>
+            <action>temp20=maincpu.pd@800791f8</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@80077aa0=00000000</action>
             <action>maincpu.pd@80077ad8=00000000</action>
@@ -41,27 +71,27 @@
             <action>maincpu.pd@800791f8=00000000</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80077aa0=0c02cb12</action>
-            <action>maincpu.pd@80077ad8=0c02cb12</action>
-            <action>maincpu.pd@80077b10=0c02cb12</action>
-            <action>maincpu.pd@80077b48=0c02cb12</action>
-            <action>maincpu.pd@80077b80=0c02cb12</action>
-            <action>maincpu.pd@80077bb8=0c02cb12</action>
-            <action>maincpu.pd@80077bf0=0c02cb12</action>
-            <action>maincpu.pd@80077c28=0c02cb12</action>
-            <action>maincpu.pd@80077c60=0c02cb12</action>
-            <action>maincpu.pd@80077c98=0c02cb12</action>
-            <action>maincpu.pd@80077cd0=0c02cb12</action>
-            <action>maincpu.pd@800781b8=0c02cb12</action>
-            <action>maincpu.pd@80078154=0c02cb12</action>
-            <action>maincpu.pd@80078960=0c02cb12</action>
-            <action>maincpu.pd@800788fc=0c02cb12</action>
-            <action>maincpu.pd@80078ce0=0c02cb12</action>
-            <action>maincpu.pd@8007902c=0c02cb12</action>
-            <action>maincpu.pd@80079150=0c02cb12</action>
-            <action>maincpu.pd@80079188=0c02cb12</action>
-            <action>maincpu.pd@800791c0=0c02cb12</action>
-            <action>maincpu.pd@800791f8=0c02cb12</action>
+            <action>maincpu.pd@80077aa0=temp0</action>
+            <action>maincpu.pd@80077ad8=temp1</action>
+            <action>maincpu.pd@80077b10=temp2</action>
+            <action>maincpu.pd@80077b48=temp3</action>
+            <action>maincpu.pd@80077b80=temp4</action>
+            <action>maincpu.pd@80077bb8=temp5</action>
+            <action>maincpu.pd@80077bf0=temp6</action>
+            <action>maincpu.pd@80077c28=temp7</action>
+            <action>maincpu.pd@80077c60=temp8</action>
+            <action>maincpu.pd@80077c98=temp9</action>
+            <action>maincpu.pd@80077cd0=temp10</action>
+            <action>maincpu.pd@800781b8=temp11</action>
+            <action>maincpu.pd@80078154=temp12</action>
+            <action>maincpu.pd@80078960=temp13</action>
+            <action>maincpu.pd@800788fc=temp14</action>
+            <action>maincpu.pd@80078ce0=temp15</action>
+            <action>maincpu.pd@8007902c=temp16</action>
+            <action>maincpu.pd@80079150=temp17</action>
+            <action>maincpu.pd@80079188=temp18</action>
+            <action>maincpu.pd@800791c0=temp19</action>
+            <action>maincpu.pd@800791f8=temp20</action>
         </script>
     </cheat>
 </mamecheat>

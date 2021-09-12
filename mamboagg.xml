@@ -1,14 +1,30 @@
 <mamecheat version="1">
-    <cheat desc="Mambo Heaven (Asia ver)">
+    <cheat desc="English Graphics">
+        <script state="on">
+            <action>temp0=maincpu.pb@8017A772</action>
+        </script>
         <script state="run">
-            <action>maincpu.pb@8017A772=02</action> <!-- English -->
-            <action>maincpu.pw@80093B2C=0003</action> <!-- Mambo Heaven title -->
+            <!-- TODO: Try to add more regions? -->
+            <action>maincpu.pb@8017A772=02</action> <!-- English, Korean images aren't available in game data -->
+        </script>
+        <script state="off">
+            <action>maincpu.pb@8017A772=temp0</action>
         </script>
     </cheat>
-    <cheat desc="Mambo King (Korean ver)">
+    <cheat desc="Region Code">
+        <parameter>
+            <item value="0x0000">Japan (Mambo a Go Go)</item>
+            <item value="0x0003">Asia (Mambo Heaven)</item>
+            <item value="0x0004">Korea (Mambo King)</item>
+        </parameter>
+        <script state="on">
+            <action>temp0=maincpu.pw@80093B2C</action>
+        </script>
         <script state="run">
-            <action>maincpu.pb@8017A772=02</action> <!-- English, Korean images aren't available in game data -->
-            <action>maincpu.pw@80093B2C=0004</action> <!-- Mambo King title -->
+            <action>maincpu.pw@80093B2C=param</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pw@80093B2C=temp0</action>
         </script>
     </cheat>
 </mamecheat>

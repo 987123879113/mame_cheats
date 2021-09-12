@@ -1,19 +1,39 @@
 <mamecheat version="1">
     <cheat desc="Skip Multisession Unit Error">
+        <script state="on">
+            <action>temp0=maincpu.pd@8004F6E0</action>
+            <action>temp1=maincpu.pd@8004F740</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@8004F6E0=00000000</action>
             <action>maincpu.pd@8004F740=00000000</action>
         </script>
+        <script state="off">
+            <action>maincpu.pd@8004F6E0=temp0</action>
+            <action>maincpu.pd@8004F740=temp1</action>
+        </script>
     </cheat>
     <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@80093050</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@80093050=24020001</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80093050=0c0094cf</action>
+            <action>maincpu.pd@80093050=temp0</action>
         </script>
     </cheat>
     <cheat desc="All Songs Unlocked">
+        <script state="on">
+            <action>temp0=maincpu.pd@80031D3C</action>
+            <action>temp1=maincpu.pd@80031ED0</action>
+            <action>temp2=maincpu.pd@80031B78</action>
+            <action>temp3=maincpu.pd@800A8AE4</action>
+            <action>temp4=maincpu.pd@800A8AF4</action>
+            <action>temp5=maincpu.pd@800A8B04</action>
+            <action>temp6=maincpu.pd@800A8B14</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@80031D3C=24020000</action>
             <action>maincpu.pd@80031ED0=24020000</action>
@@ -24,21 +44,24 @@
             <action>maincpu.pd@800A8B14=24040000</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80031D3C=30420001</action>
-            <action>maincpu.pd@80031ED0=30420001</action>
-            <action>maincpu.pd@80031B78=30420001</action>
-            <action>maincpu.pd@800A8AE4=2404025a</action>
-            <action>maincpu.pd@800AC9C0=24040262</action>
-            <action>maincpu.pd@800AC9C4=2404026b</action>
-            <action>maincpu.pd@800AC9CC=2404026b</action>
+            <action>maincpu.pd@80031D3C=temp0</action>
+            <action>maincpu.pd@80031ED0=temp1</action>
+            <action>maincpu.pd@80031B78=temp2</action>
+            <action>maincpu.pd@800A8AE4=temp3</action>
+            <action>maincpu.pd@800AC9C0=temp4</action>
+            <action>maincpu.pd@800AC9C4=temp5</action>
+            <action>maincpu.pd@800AC9CC=temp6</action>
         </script>
     </cheat>
     <cheat desc="Enable System Songs (Debug, How To Play) (BUGGY)">
+        <script state="on">
+            <action>temp0=maincpu.pd@80031CB8</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@80031CB8=24020000</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80031CB8=30420001</action>
+            <action>maincpu.pd@80031CB8=temp0</action>
         </script>
     </cheat>
 </mamecheat>

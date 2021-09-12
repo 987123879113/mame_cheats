@@ -1,5 +1,12 @@
 <mamecheat version="1">
     <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@8007f800</action>
+            <action>temp1=maincpu.pd@8007f914</action>
+            <action>temp2=maincpu.pd@8007f8a8</action>
+            <action>temp3=maincpu.pd@8007f8b0</action>
+            <action>temp4=maincpu.pw@8007f8f4</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@8007f800=00000000</action>
             <action>maincpu.pd@8007f914=00000000</action>
@@ -8,24 +15,29 @@
             <action>maincpu.pw@8007f8f4=0002</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@8007f800=14600062</action>
-            <action>maincpu.pd@8007f914=10600105</action>
-            <action>maincpu.pd@8007f8a8=0c007191</action>
-            <action>maincpu.pd@8007f8b0=0c007191</action>
-            <action>maincpu.pw@8007f8f4=0010</action>
+            <action>maincpu.pd@8007f800=temp0</action>
+            <action>maincpu.pd@8007f914=temp1</action>
+            <action>maincpu.pd@8007f8a8=temp2</action>
+            <action>maincpu.pd@8007f8b0=temp3</action>
+            <action>maincpu.pw@8007f8f4=temp4</action>
         </script>
     </cheat>
 
     <cheat desc="Disable announcer/crowd during song">
+        <script state="on">
+            <action>temp0=maincpu.pd@80080c50</action>
+            <action>temp1=maincpu.pd@80080204</action>
+            <action>temp2=maincpu.pd@80080de8</action>
+        </script>
         <script state="run">
             <action>maincpu.pd@80080c50=00000000</action>
             <action>maincpu.pd@80080204=00000000</action>
             <action>maincpu.pd@80080de8=00000000</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80080c50=0c029525</action>
-            <action>maincpu.pd@80080204=0c029525</action>
-            <action>maincpu.pd@80080de8=0c029525</action>
+            <action>maincpu.pd@80080c50=temp0</action>
+            <action>maincpu.pd@80080204=temp1</action>
+            <action>maincpu.pd@80080de8=temp2</action>
         </script>
     </cheat>
 </mamecheat>

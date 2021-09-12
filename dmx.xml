@@ -1,12 +1,17 @@
 <mamecheat version="1">
     <cheat desc="Enable debug menu">
+        <script state="on">
+            <action>temp0=maincpu.pb@800f90d0</action>
+            <action>temp1=maincpu.pw@800f90d4</action>
+            <action>temp2=maincpu.pd@80018a68</action>
+        </script>
         <script state="run">
             <action>maincpu.pb@800f90d0=01</action>
             <action>maincpu.pw@800f90d4=0001</action>
             <action>maincpu.pd@80018a68=00000000</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80018a68=10400030</action>
+            <action>maincpu.pd@80018a68=temp2</action>
         </script>
     </cheat>
 

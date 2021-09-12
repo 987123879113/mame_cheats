@@ -1,17 +1,36 @@
 <mamecheat version="1">
+    <!-- TODO: Add more region flags? -->
     <cheat desc="Change region flag">
+        <script state="on">
+            <action>temp0=maincpu.pb@8009A838</action>
+        </script>
         <script state="run">
             <action>maincpu.pb@8009A838=02</action>
         </script>
+        <script state="off">
+            <action>maincpu.pb@8009A838=temp0</action>
+        </script>
     </cheat>
     <cheat desc="Change language">
+        <script state="on">
+            <action>temp0=maincpu.pb@80115786</action>
+        </script>
         <script state="run">
             <action>maincpu.pb@80115786=06</action>
         </script>
+        <script state="off">
+            <action>maincpu.pb@80115786=temp0</action>
+        </script>
     </cheat>
     <cheat desc="Change music database">
+        <script state="on">
+            <action>temp0=maincpu.pb@800104C5</action>
+        </script>
         <script state="run">
             <action>maincpu.pb@800104C5=65</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pb@800104C5=temp0</action>
         </script>
     </cheat>
 </mamecheat>
