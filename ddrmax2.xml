@@ -23,7 +23,7 @@
         </script>
     </cheat>
 
-    <cheat desc="Disable announcer/crowd during song">
+    <cheat desc="Disable announcer/crowd during song" tempvariables="18">
         <script state="on">
             <action>temp0=maincpu.pd@8007455c</action>
             <action>temp1=maincpu.pd@80074598</action>
