@@ -1,0 +1,13 @@
+<mamecheat version="1">
+    <cheat desc="Force enable Konami Internet Challenge">
+        <script state="on">
+            <action>temp0=maincpu.pb@8011282d</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pb@8011282d=10</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pb@8011282d=temp0</action>
+        </script>
+    </cheat>
+</mamecheat>
