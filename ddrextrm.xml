@@ -1,25 +1,16 @@
 <mamecheat version="1">
-    <cheat desc="Autoplay">
+    <cheat desc="Freeze stage counter (2nd Stage)">
         <script state="on">
-            <action>temp0=maincpu.pd@80076dd4</action>
-            <action>temp1=maincpu.pd@80076ee8</action>
-            <action>temp2=maincpu.pd@80076e7c</action>
-            <action>temp3=maincpu.pd@80076e84</action>
-            <action>temp4=maincpu.pw@80076ec8</action>
+            <action>temp0=maincpu.pd@80024cd4</action>
+            <action>temp1=maincpu.pd@80024ce8</action>
         </script>
         <script state="run">
-            <action>maincpu.pd@80076dd4=00000000</action>
-            <action>maincpu.pd@80076ee8=00000000</action>
-            <action>maincpu.pd@80076e7c=34020000</action>
-            <action>maincpu.pd@80076e84=00000000</action>
-            <action>maincpu.pw@80076ec8=0002</action>
+            <action>maincpu.pd@80024cd4=34020001</action>
+            <action>maincpu.pd@80024ce8=a202000a</action>
         </script>
         <script state="off">
-            <action>maincpu.pd@80076dd4=temp0</action>
-            <action>maincpu.pd@80076ee8=temp1</action>
-            <action>maincpu.pd@80076e7c=temp2</action>
-            <action>maincpu.pd@80076e84=temp3</action>
-            <action>maincpu.pw@80076ec8=temp4</action>
+            <action>maincpu.pd@80024cd4=temp0</action>
+            <action>maincpu.pd@80024ce8=temp1</action>
         </script>
     </cheat>
 
@@ -92,6 +83,30 @@
             <action>maincpu.pd@80079188=temp18</action>
             <action>maincpu.pd@800791c0=temp19</action>
             <action>maincpu.pd@800791f8=temp20</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Autoplay">
+        <script state="on">
+            <action>temp0=maincpu.pd@80076dd4</action>
+            <action>temp1=maincpu.pd@80076ee8</action>
+            <action>temp2=maincpu.pd@80076e7c</action>
+            <action>temp3=maincpu.pd@80076e84</action>
+            <action>temp4=maincpu.pw@80076ec8</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80076dd4=00000000</action>
+            <action>maincpu.pd@80076ee8=00000000</action>
+            <action>maincpu.pd@80076e7c=34020000</action>
+            <action>maincpu.pd@80076e84=00000000</action>
+            <action>maincpu.pw@80076ec8=0002</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80076dd4=temp0</action>
+            <action>maincpu.pd@80076ee8=temp1</action>
+            <action>maincpu.pd@80076e7c=temp2</action>
+            <action>maincpu.pd@80076e84=temp3</action>
+            <action>maincpu.pw@80076ec8=temp4</action>
         </script>
     </cheat>
 </mamecheat>
