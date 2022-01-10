@@ -1,4 +1,18 @@
 <mamecheat version="1">
+    <cheat desc="Enable 3 panel difficulty selection">
+        <script state="on">
+            <action>temp0=maincpu.pd@800462b4</action>
+            <action>temp1=maincpu.pd@80046330</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@800462b4=00000000</action>
+            <action>maincpu.pd@80046330=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@800462b4=temp0</action>
+            <action>maincpu.pd@80046330=temp1</action>
+        </script>
+    </cheat>
     <!-- TODO: Add more region flags? -->
     <cheat desc="Change region flag">
         <script state="on">

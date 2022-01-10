@@ -1,0 +1,16 @@
+<mamecheat version="1">
+    <cheat desc="Enable 3 panel difficulty selection">
+        <script state="on">
+            <action>temp0=maincpu.pd@80046240</action>
+            <action>temp1=maincpu.pd@800462bc</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80046240=00000000</action>
+            <action>maincpu.pd@800462bc=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80046240=temp0</action>
+            <action>maincpu.pd@800462bc=temp1</action>
+        </script>
+    </cheat>
+</mamecheat>
