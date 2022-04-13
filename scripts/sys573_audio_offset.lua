@@ -1,3 +1,8 @@
+-- Instructions:
+-- Launch MAME using "-autoboot_script scripts\sys573_audio_offset.lua" to load this script.
+-- Modify counter_offset value below to change your offset.
+-- Add an override value for a specific ROM using the counter_offset_presets table.
+
 function calculate_offset_from_milliseconds(milliseconds)
     return emu.attotime.from_msec(milliseconds):as_double() * 44100
 end
