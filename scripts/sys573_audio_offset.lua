@@ -32,12 +32,23 @@ function get_offset_counter()
     return math.max(0, rounded)
 end
 
+memory = manager.machine.devices[":maincpu"].spaces["program"]
+
+is_callback_read = false
 function counter_callback(offset, data, mask)
     if offset == 0x1f6400c8 and mask == 0xffff0000 then
-        counter_current = (counter_current & 0x0000ffff) | (data & mask)
+        if is_callback_read == true then
+            -- Hack because reading memory directly also calls the callback
+            return data
+        end
+
         return get_offset_counter() & mask
     elseif offset == 0x1f6400cc and mask == 0x0000ffff then
-        counter_current = (counter_current & 0xffff0000) | (data & mask)
+        counter_current = data & mask
+        is_callback_read = true
+        counter_upper = memory:read_i16(0x1f6400ca)
+        is_callback_read = false
+        counter_current = counter_current | (counter_upper << 16)
         return get_offset_counter() & mask
     end
 
@@ -45,8 +56,6 @@ function counter_callback(offset, data, mask)
 end
 
 if manager.machine.devices[":k573dio"] ~= nil then
-    memory = manager.machine.devices[":maincpu"].spaces["program"]
-
     if passthrough_counter_high == nil then
         passthrough_counter_high = memory:install_read_tap(0x1f6400c8, 0x1f6400cb, "counter_high", counter_callback)
     else
