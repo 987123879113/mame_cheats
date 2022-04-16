@@ -1,4 +1,34 @@
 <mamecheat version="1">
+    <cheat desc="Disable background videos">
+        <script state="on">
+            <action>temp0=maincpu.pw@80062dae</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pw@80062dae=1000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pw@80062dae=temp0</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Disable announcer/crowd during song">
+        <script state="on">
+            <action>temp0=maincpu.pd@80071cf0</action>
+            <action>temp1=maincpu.pd@80072038</action>
+            <action>temp2=maincpu.pd@800721f0</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80071cf0=00000000</action>
+            <action>maincpu.pd@80072038=00000000</action>
+            <action>maincpu.pd@800721f0=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80071cf0=temp0</action>
+            <action>maincpu.pd@80072038=temp1</action>
+            <action>maincpu.pd@800721f0=temp2</action>
+        </script>
+    </cheat>
+
     <cheat desc="Autoplay">
         <script state="on">
             <action>temp0=maincpu.pd@800703cc</action>
@@ -20,24 +50,6 @@
             <action>maincpu.pd@80070478=temp2</action>
             <action>maincpu.pd@8007047c=temp3</action>
             <action>maincpu.pw@800704c4=temp4</action>
-        </script>
-    </cheat>
-
-    <cheat desc="Disable announcer/crowd during song">
-        <script state="on">
-            <action>temp0=maincpu.pd@80071cf0</action>
-            <action>temp1=maincpu.pd@80072038</action>
-            <action>temp2=maincpu.pd@800721f0</action>
-        </script>
-        <script state="run">
-            <action>maincpu.pd@80071cf0=00000000</action>
-            <action>maincpu.pd@80072038=00000000</action>
-            <action>maincpu.pd@800721f0=00000000</action>
-        </script>
-        <script state="off">
-            <action>maincpu.pd@80071cf0=temp0</action>
-            <action>maincpu.pd@80072038=temp1</action>
-            <action>maincpu.pd@800721f0=temp2</action>
         </script>
     </cheat>
 </mamecheat>

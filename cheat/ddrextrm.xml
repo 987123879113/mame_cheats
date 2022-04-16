@@ -14,6 +14,18 @@
         </script>
     </cheat>
 
+    <cheat desc="Disable background videos">
+        <script state="on">
+            <action>temp0=maincpu.pw@8006867e</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pw@8006867e=1000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pw@8006867e=temp0</action>
+        </script>
+    </cheat>
+
     <cheat desc="Disable announcer/crowd during song" tempvariables="21">
         <script state="on">
             <action>temp0=maincpu.pd@80077aa0</action>
@@ -83,6 +95,29 @@
             <action>maincpu.pd@80079188=temp18</action>
             <action>maincpu.pd@800791c0=temp19</action>
             <action>maincpu.pd@800791f8=temp20</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Battle Mode P1">
+        <script state="on">
+            <action>temp4=maincpu.pb@800f00b0</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pb@800f00b0=05</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pb@800f00b0=temp4</action>
+        </script>
+    </cheat>
+    <cheat desc="Battle Mode P2">
+        <script state="on">
+            <action>temp4=maincpu.pb@8010432c</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pb@8010432c=05</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pb@8010432c=temp4</action>
         </script>
     </cheat>
 
