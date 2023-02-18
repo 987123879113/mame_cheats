@@ -1,0 +1,10 @@
+{
+	"plugin": {
+		"name": "sys573_digital_audio_offset",
+		"description": "Sys573 digital audio offset plugin",
+		"version": "0.0.1",
+		"author": "987123879113",
+		"type": "plugin",
+		"start": "true"
+	}
+}
