@@ -1,10 +1,4 @@
 {
-    "default": "28ms", // Specify a default value to offset all Sys573 digital audio by unless an override is specified
-                       // Setting this to 0 is the equivalent of disabling the default override.
-                       // Can be either a samples-based (1234) or millisecond-based (1234ms) value.
-    "overrides": {
-        // Examples:
-        // "ddrmax": 1234, // Sample-based override offset
-        // "ddr5m": "50ms", // Millisecond-based override offset, gets converted to samples automatically
-    }
+    "default": "0ms",
+    "overrides": {}
 }
