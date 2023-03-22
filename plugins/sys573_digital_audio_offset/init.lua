@@ -64,6 +64,17 @@ function sys573_digital_audio_offset.startplugin()
         local counter_current = 0
         local memory = nil
 
+        local override_offset = settings['overrides'][manager.machine.system["name"]]
+        if override_offset ~= nil then
+            print("Audio offset override found! " .. counter_offset .. " -> " .. override_offset)
+            counter_offset = override_offset
+        end
+
+        if counter_offset == 0 then
+            -- Don't hook the code if no offset is specified
+            return
+        end
+
         local function get_offset_counter()
             rounded = math.floor((counter_current - counter_offset) + 0.5)
             return math.max(0, rounded)
@@ -88,12 +99,6 @@ function sys573_digital_audio_offset.startplugin()
             end
 
             return data
-        end
-
-        local override_offset = settings['overrides'][manager.machine.system["name"]]
-        if override_offset ~= nil then
-            print("Audio offset override found! " .. counter_offset .. " -> " .. override_offset)
-            counter_offset = override_offset
         end
 
         memory = manager.machine.devices[":maincpu"].spaces["program"]
