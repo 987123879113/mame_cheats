@@ -16,7 +16,7 @@ function sys573_digital_audio_offset.startplugin()
     end
 
     local function get_processed_offset_value(val)
-        match = string.match(val, "([%d]+[%.]?[%d]*)%s*[mM][sS]")
+        match = string.match(val, "([-]?[%d]+[%.]?[%d]*)%s*[mM][sS]")
         if match ~= nil then
             return calculate_offset_from_milliseconds(tonumber(match))
         end
