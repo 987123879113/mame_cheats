@@ -1,0 +1,14 @@
+<mamecheat version="1">
+    <cheat desc="Re-enable 'Money' song">
+        <!-- NOTE: Replace 845jab02 with 845jaa02 to fix the audio for this song -->
+        <script state="on">
+            <action>temp0=maincpu.pd@80070f80</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80070f80=00000000</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80070f80=temp0</action>
+        </script>
+    </cheat>
+</mamecheat>
