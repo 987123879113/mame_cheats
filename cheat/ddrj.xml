@@ -1,0 +1,35 @@
+<mamecheat version="1">
+    <cheat desc="Re-enable 'Money' song">
+        <!-- NOTE: Needs more modifications to make it play the right BGM (a custom CD and/or maybe rewriting the track IDs in the game data somewhere) -->
+        <script state="on">
+            <action>temp0=maincpu.pd@80073ba8</action>
+            <action>temp1=maincpu.pb@800e4546</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80073ba8=00000000</action>
+            <action>maincpu.pb@800e4546=04</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80073ba8=temp0</action>
+            <action>maincpu.pb@800e4546=temp1</action>
+        </script>
+    </cheat>
+    <cheat desc="Autoplay">
+        <!-- WARNING: Doubles is broken -->
+        <script state="on">
+            <action>temp0=maincpu.pd@80066198</action>
+            <action>temp1=maincpu.pd@800669dc</action>
+            <action>temp2=maincpu.pd@800669e4</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@80066198=00000000</action>
+            <action>maincpu.pd@800669dc=00000000</action>
+            <action>maincpu.pd@800669e4=24020002</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@80066198=temp0</action>
+            <action>maincpu.pd@800669dc=temp1</action>
+            <action>maincpu.pd@800669e4=temp2</action>
+        </script>
+    </cheat>
+</mamecheat>

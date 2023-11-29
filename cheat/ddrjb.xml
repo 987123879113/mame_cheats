@@ -11,4 +11,22 @@
             <action>maincpu.pd@80070f80=temp0</action>
         </script>
     </cheat>
+    <cheat desc="Autoplay">
+        <!-- WARNING: Doubles is broken -->
+        <script state="on">
+            <action>temp0=maincpu.pd@8006358c</action>
+            <action>temp1=maincpu.pd@80063e34</action>
+            <action>temp2=maincpu.pd@80063e3c</action>
+        </script>
+        <script state="run">
+            <action>maincpu.pd@8006358c=00000000</action>
+            <action>maincpu.pd@80063e34=00000000</action>
+            <action>maincpu.pd@80063e3c=24020002</action>
+        </script>
+        <script state="off">
+            <action>maincpu.pd@8006358c=temp0</action>
+            <action>maincpu.pd@80063e34=temp1</action>
+            <action>maincpu.pd@80063e3c=temp2</action>
+        </script>
+    </cheat>
 </mamecheat>
