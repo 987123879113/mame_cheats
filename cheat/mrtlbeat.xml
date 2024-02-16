@@ -1,0 +1,130 @@
+<mamecheat version="1">
+    <cheat desc="Debug Softdip implementation (do not disable)">
+        <script state="run">
+            <action>maincpu.pd@80010250=3c028001</action>
+            <action>maincpu.pd@80010254=2442026c</action>
+            <action>maincpu.pd@80010258=00441020</action>
+            <action>maincpu.pd@8001025c=80420000</action>
+            <action>maincpu.pd@80010260=00000000</action>
+            <action>maincpu.pd@80010264=03e00008</action>
+            <action>maincpu.pd@80010268=00000000</action>
+
+            <action condition="maincpu.pd@8001026c==37302032">maincpu.pd@8001026c=00000000</action>
+            <action condition="maincpu.pd@80010270==3A32353A">maincpu.pd@80010270=00000000</action>
+            <action condition="maincpu.pd@80010274==6E203732">maincpu.pd@80010274=00000000</action>
+            <action condition="maincpu.pd@80010278==2061646F">maincpu.pd@80010278=00000000</action>
+
+            <!-- Jump to implementation -->
+            <action>maincpu.pd@80036170=08004094</action>
+            <action>maincpu.pd@80036174=00000000</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: JobBar">
+        <script state="off">
+            <action>maincpu.pb@8001026c=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@8001026c=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: seq from pc">
+        <script state="off">
+            <action>maincpu.pb@8001026d=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@8001026d=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: auto">
+        <script state="off">
+            <action>maincpu.pb@8001026e=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@8001026e=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: debug">
+        <script state="off">
+            <action>maincpu.pb@8001026f=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@8001026f=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: all">
+        <script state="off">
+            <action>maincpu.pb@80010270=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010270=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: iofilter">
+        <script state="off">
+            <action>maincpu.pb@80010271=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010271=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: disp io">
+        <script state="off">
+            <action>maincpu.pb@80010272=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010272=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: disp point">
+        <script state="off">
+            <action>maincpu.pb@80010273=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010273=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: disp count">
+        <script state="off">
+            <action>maincpu.pb@80010274=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010274=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: disp seq">
+        <script state="off">
+            <action>maincpu.pb@80010275=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010275=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: mv play">
+        <script state="off">
+            <action>maincpu.pb@80010276=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010276=01</action>
+        </script>
+    </cheat>
+
+    <cheat desc="Debug Softdip: log print">
+        <script state="off">
+            <action>maincpu.pb@80010278=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010278=01</action>
+        </script>
+    </cheat>
+</mamecheat>
