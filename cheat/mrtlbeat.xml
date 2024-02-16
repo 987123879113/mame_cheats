@@ -119,6 +119,15 @@
         </script>
     </cheat>
 
+    <cheat desc="Debug Softdip: measure">
+        <script state="off">
+            <action>maincpu.pb@80010277=00</action>
+        </script>
+        <script state="on">
+            <action>maincpu.pb@80010277=01</action>
+        </script>
+    </cheat>
+
     <cheat desc="Debug Softdip: log print">
         <script state="off">
             <action>maincpu.pb@80010278=00</action>
